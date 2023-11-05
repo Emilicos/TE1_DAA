@@ -1,0 +1,19 @@
+====================================================================================================
+Sorting Mergesort dengan array random berukuran 512 menghabiskan 8.6093750000 KB.
+Sorting Mergesort dengan array random berukuran 512 menghabiskan 7.7121257782 ms.
+Sorting Mergesort dengan array sorted berukuran 512 menghabiskan 6.1054687500 KB.
+Sorting Mergesort dengan array sorted berukuran 512 menghabiskan 7.1954727173 ms.
+Sorting Mergesort dengan array reversed berukuran 512 menghabiskan 4.4560546875 KB.
+Sorting Mergesort dengan array reversed berukuran 512 menghabiskan 6.8402290344 ms.
+Sorting Mergesort dengan array random berukuran 8192 menghabiskan 66.0390625000 KB.
+Sorting Mergesort dengan array random berukuran 8192 menghabiskan 228.9202213287 ms.
+Sorting Mergesort dengan array sorted berukuran 8192 menghabiskan 64.2890625000 KB.
+Sorting Mergesort dengan array sorted berukuran 8192 menghabiskan 245.5835342407 ms.
+Sorting Mergesort dengan array reversed berukuran 8192 menghabiskan 64.2890625000 KB.
+Sorting Mergesort dengan array reversed berukuran 8192 menghabiskan 250.1702308655 ms.
+Sorting Mergesort dengan array random berukuran 65536 menghabiskan 513.6015625000 KB.
+Sorting Mergesort dengan array random berukuran 65536 menghabiskan 2447.1042156219 ms.
+Sorting Mergesort dengan array sorted berukuran 65536 menghabiskan 512.2890625000 KB.
+Sorting Mergesort dengan array sorted berukuran 65536 menghabiskan 2503.1242370605 ms.
+Sorting Mergesort dengan array reversed berukuran 65536 menghabiskan 512.2890625000 KB.
+Sorting Mergesort dengan array reversed berukuran 65536 menghabiskan 2529.4108390808 ms.

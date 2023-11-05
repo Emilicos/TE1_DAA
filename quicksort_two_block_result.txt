@@ -1,0 +1,20 @@
+Perbandingan Algoritma Two-Pivot-Block-Quicksort dan Merge Sort
+====================================================================================================
+Sorting Two Pivot Block Quicksort dengan array random berukuran 512 menghabiskan 16.7226562500 KB.
+Sorting Two Pivot Block Quicksort dengan array random berukuran 512 menghabiskan 7.8747272491 ms.
+Sorting Two Pivot Block Quicksort dengan array sorted berukuran 512 menghabiskan 15.1992187500 KB.
+Sorting Two Pivot Block Quicksort dengan array sorted berukuran 512 menghabiskan 157.3164463043 ms.
+Sorting Two Pivot Block Quicksort dengan array reversed berukuran 512 menghabiskan 15.1992187500 KB.
+Sorting Two Pivot Block Quicksort dengan array reversed berukuran 512 menghabiskan 172.8487014771 ms.
+Sorting Two Pivot Block Quicksort dengan array random berukuran 8192 menghabiskan 31.0859375000 KB.
+Sorting Two Pivot Block Quicksort dengan array random berukuran 8192 menghabiskan 255.6507587433 ms.
+Sorting Two Pivot Block Quicksort dengan array sorted berukuran 8192 menghabiskan 29.3906250000 KB.
+Sorting Two Pivot Block Quicksort dengan array sorted berukuran 8192 menghabiskan 69672.6386547089 ms.
+Sorting Two Pivot Block Quicksort dengan array reversed berukuran 8192 menghabiskan 29.3906250000 KB.
+Sorting Two Pivot Block Quicksort dengan array reversed berukuran 8192 menghabiskan 67477.0467281342 ms.
+Sorting Two Pivot Block Quicksort dengan array random berukuran 65536 menghabiskan 33.7929687500 KB.
+Sorting Two Pivot Block Quicksort dengan array random berukuran 65536 menghabiskan 2235.8298301697 ms.
+Sorting Two Pivot Block Quicksort dengan array sorted berukuran 65536 menghabiskan 34.8459639062 KB.
+Sorting Two Pivot Block Quicksort dengan array sorted berukuran 65536 menghabiskan 4837474.5496874532 ms.
+Sorting Two Pivot Block Quicksort dengan array reversed berukuran 65536 menghabiskan 34.8459639062 KB.
+Sorting Two Pivot Block Quicksort dengan array reversed berukuran 65536 menghabiskan 5368946.8346592109 ms.

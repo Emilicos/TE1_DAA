@@ -1,7 +1,34 @@
+import numpy as np
+
 NUM_OF_BLOCKS = 1024
 
-def TwoPivotBlockQuicksort(A, l = None, r = None):
-    if l is None:
+# Two Pivot Quck Sort Algorithm
+# By: Alvaro Austin (2106752180)
+# Reference: Paper Referensi (terdapat di laporan TE)
+
+def TwoPivotBlockQuicksort(A, l=None, r=None):
+    """ Menggunakan approach ini untuk menghindari recursion max depth exceeded pada bahasa pemrograman python """
+    
+    if l is None and r is None:
+        l, r = 0, len(A)-1
+    
+    stack = [(l, r)]
+
+    while len(stack):
+        l, r = stack.pop()
+        i, j = TwoPivotBlockPartition(A, l, r)
+
+        if l < i-1:
+            stack.append((l, i-1))
+        if i+1 < j-1:
+            stack.append((i+1, j-1))
+        if j+1 < r:
+            stack.append((j+1, r))
+    
+def TwoPivotBlockQuicksortNormal(A, l = None, r = None):
+    """Apabila menggunakan ini, akan terjadi error RecursionError: maximum recursion depth exceeded in comparison. Hal ini adalah masalah pada pythonnya dan bukan pada algoritmannya."""
+    
+    if l is None and r is None:
         l, r = 0, len(A)-1
         
     if l < r:
@@ -51,6 +78,17 @@ def TwoPivotBlockPartition(A, l, r):
     A[j], A[r] = A[r], A[j]
     return (i-1, j)
 
-A = [-3, -6, -1, -2, -4, -5, -7, -8]
-TwoPivotBlockQuicksort(A)
-print(A)
+# Just testing result ...
+
+def main():
+    with open('dataset/big/random.txt', 'r') as file:
+        A = [int(line.strip()) for line in file.readlines()]
+    
+    A_sorted = sorted(A)
+    TwoPivotBlockQuicksort(A)
+    
+    assert np.array_equal(A_sorted, A)
+    print("Kedua array sama :D")
+    
+if __name__ == '__main__':
+    main()

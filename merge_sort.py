@@ -1,11 +1,16 @@
-def merge_sort(A, p, r):
+import numpy as np
+
+def MergeSort(A, p = None, r = None):
+    if(p is None and r is None):
+        p, r = 0, len(A) - 1
+        
     if p < r:
         q = (p + r) // 2
-        merge_sort(A, p, q)
-        merge_sort(A, q + 1, r)
-        merge(A, p, q, r)
+        MergeSort(A, p, q)
+        MergeSort(A, q + 1, r)
+        Merge(A, p, q, r)
 
-def merge(A, p, q, r):
+def Merge(A, p, q, r):
     a = q - p + 1
     b = r - q
 
@@ -31,9 +36,19 @@ def merge(A, p, q, r):
         else:
             A[k] = R[j]
             j = j + 1
-                        
-x =  [-3, -6, -1, -2, -4, -5]
+            
 
-merge_sort(x, 0, len(x) - 1)
+# Just testing result ...
 
-print(x)
+def main():
+    with open('dataset/big/random.txt', 'r') as file:
+        A = [int(line.strip()) for line in file.readlines()]
+    
+    A_sorted = sorted(A)
+    MergeSort(A)
+    
+    assert np.array_equal(A_sorted, A)
+    print("Kedua array sama :D")
+    
+if __name__ == '__main__':
+    main()       
